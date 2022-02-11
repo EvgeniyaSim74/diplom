@@ -111,7 +111,7 @@ body {
   margin-left: 35px;
 }
 
-/*--------ASIDE 1--------*/
+/*--------Section 1--------*/
 
 .trends {
   margin-top: 60px;
@@ -202,7 +202,7 @@ body {
   color: #b59f5b;
   font-weight: bold;
   margin-right: 20px;
-  font-size: 0.8vw;
+  font-size: 0.8em;
 }
 .trend-head-link {
   width: 100%;
@@ -210,7 +210,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.2em;
   vertical-align: top;
 }
 
@@ -307,7 +307,7 @@ body {
   cursor: pointer;
 }
 
-/*--------ASIDE 2------*/
+/*--------ASIDE ------*/
 
 .aside-left {
   display: flex;
@@ -337,8 +337,8 @@ body {
   padding-top: 0;
 }
 .img-post-mini {
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
 }
 .post-new-meta {
   width: 180px;
@@ -528,7 +528,7 @@ body {
   vertical-align: top;
 }
 
-/*-------ASIDE 3----*/
+/*-------Section 2----*/
 
 .products {
   width: 100%;
@@ -546,15 +546,25 @@ body {
 }
 .product-card{
   display: flex;
-  width: 27%;
+  flex: auto;
+  max-width: 27%;
   flex-direction: column;
   align-items: center;
 }
+source {
+  width: 100%;
+  height: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
 .product-image {
-  max-width: 100%;
-  height: 100%;
+  min-width: 100%;
 }
 .product-shop {
+  max-width: 100%;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -579,6 +589,7 @@ body {
   color: #b59f5b;
 }
 .buy-block {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -586,6 +597,7 @@ body {
   margin-top: 25px;
 }
 .price {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -901,7 +913,7 @@ body {
     left: 0;
 }
 
-/*-------ASIDE 1-------*/
+/*-------Section 1-------*/
 
 .post-trends {
   display:flex;
@@ -909,6 +921,10 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   margin-top: 30px;
+}
+
+.trend-head-link {
+  font-size: 1.21em;
 }
 
 /*------MAIN------*/
@@ -952,7 +968,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*------ASIDE 2------*/
+/*------ASIDE------*/
 
 .aside-left {
   display: flex;
@@ -961,7 +977,7 @@ body {
   justify-content: flex-start;
 }
 
-/*------ASIDE 3------*/
+/*------Section 2------*/
 
 .products {
   width: 91vw;
@@ -975,7 +991,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  width: 45%;
+  max-width: 45%;
 }
 .product-shop {
   outline-offset: 20px;
@@ -1065,7 +1081,7 @@ body {
     left: 0;
 }
 
-/*-------ASIDE 1-------*/
+/*-------Section 1-------*/
 
 .post-trends {
   display:flex;
@@ -1129,7 +1145,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*------ASIDE 2------*/
+/*------ASIDE ------*/
 
 .aside-left {
   display: flex;
@@ -1138,7 +1154,7 @@ body {
   justify-content: flex-start;
 }
 
-/*-------ASIDE 3-----*/
+/*-------Section 2-----*/
 
 .products {
   width: 91vw;
@@ -1152,7 +1168,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  width: 45%;
+  max-width: 45%;
 }
 .product-shop {
   outline-offset: 20px;
@@ -1271,7 +1287,7 @@ body {
   justify-content: center;
 }
 
-/*-------ASIDE 1-------*/
+/*-------Section 1-------*/
 
 .trends {
   margin-top: 45px;
@@ -1350,7 +1366,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*------ASIDE 2------*/
+/*------ASIDE------*/
 
 .aside-left {
   display: flex;
@@ -1378,7 +1394,7 @@ body {
   margin-top: 15px;
 }
 
-/*-------ASIDE 3-----*/
+/*-------Section 2-----*/
 
 .products {
   width: 91vw;
@@ -1403,7 +1419,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  width: 100%;
+  max-width: 100%;
 }
 .product-shop {
   width: 100%;
@@ -1527,7 +1543,7 @@ body {
   justify-content: center;
 }
 
-/*-------ASIDE 1-------*/
+/*-------Section 1-------*/
 
 .post-trends {
   display:flex;
@@ -1608,7 +1624,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*------ASIDE 2------*/
+/*------ASIDE------*/
 
 .aside-left {
   display: flex;
@@ -1636,7 +1652,7 @@ body {
   margin-top: 15px;
 }
 
-/*-------ASIDE 3-----*/
+/*-------Section 2-----*/
 
 .products {
   width: 91vw;
@@ -1661,7 +1677,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  width: 100%;
+  max-width: 100%;
 }
 .product-shop {
   width: 100%;
