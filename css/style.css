@@ -332,6 +332,7 @@ body {
   margin-right: 100px;
 }
 .post-new {
+  width: 100%;
   display: flex;
   margin-top: 22px;
   padding-top: 0;
@@ -533,11 +534,10 @@ body {
 .products {
   width: 100%;
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-top: 60px;
 }
 .our-products {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -546,8 +546,7 @@ body {
 }
 .product-card{
   display: flex;
-  flex: auto;
-  max-width: 27%;
+  width: 27%;
   flex-direction: column;
   align-items: center;
 }
@@ -566,10 +565,12 @@ img {
 .product-shop {
   max-width: 100%;
   min-height: 200px;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   outline: solid #b59f5b 3px;
-  outline-offset: 30px;
+  outline-offset: 20px;
 }
 .product-name {
   text-transform: uppercase;
@@ -700,6 +701,7 @@ img {
 ._hidden {
   display: none;
 }
+ 
 .popap {
   width: 100%;
   height: 100%;
@@ -711,25 +713,36 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(svg/form-x.svg);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: right 36.5% top 55px;
-}
-.popap-list {
-  min-width: 380px;
+  }
+.popap-all {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   width: 25%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  min-width: 380px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   margin-top: 80px;
-  position: fixed;
+
+  }
+
+.exit_list {
+  width: 20px;
+  align-self: flex-end;
+}
+.popap-list {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: white;
   padding: 50px 25px;
+  
 }
 .fidbek-list {
   margin-top: 20px;
@@ -744,7 +757,7 @@ img {
 }
 .visit-answers {
   margin-top: 10px;
-  width: 330px;
+  width: 100%;
   height: 45px;
   padding: 15px;
   font-family: open-sans-r, sans-serif;
@@ -815,7 +828,7 @@ img {
  }
 
  .text-tell-me {
-  width: 330px;
+  width: 100%;
   min-height: 125px;
   margin-top: 10px;
   border: none;
@@ -835,10 +848,11 @@ img {
 
  }
 .send {
+  width: 100%;
   margin-top: 25px;
 }
 .send-fidbek {
-  width: 330px;
+  width: 100%;
   height: 45px;
   background-color: #b59f5b;
   border: none;
@@ -864,13 +878,15 @@ body {
 
 .header {
   padding-top: 45px;
-  width: 100vw;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
   background-image: url(images/banner-bg-tablet.jpg);
 }
 .logo-and-menu {
-  width: 92vw;
-  min-width: 700px;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
 }
 .menu-list {
   display: none;
@@ -927,18 +943,21 @@ body {
   font-size: 1.21em;
 }
 
+
+
 /*------MAIN------*/
 
 .container {
-  width: 91vw;
-  min-width: 700px;
-  padding-left: 0;
-  padding-right: 0;
+  width: 100%;
+  padding-left:25px;
+  padding-right:25px;
   padding-top: 50px;
   padding-bottom: 50px;
+
 }
 .pages-news {
-  width: 57%;
+  width: 64%;
+  margin-right: 40px;
 }
 .page-list {
   display: flex;
@@ -958,6 +977,11 @@ body {
   width: 100%;
   margin-left: 0px;
   }
+
+.news-text-meta {
+  display: flex;
+  flex-direction: row;
+}
 .about {
   display: contents;
   max-width: 100%;
@@ -973,15 +997,23 @@ body {
 .aside-left {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: calc(36% - 60px);
   justify-content: flex-start;
 }
 
+.post-new-meta {
+  width: 100%;
+}
+ul {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 /*------Section 2------*/
 
 .products {
-  width: 91vw;
-  min-width: 700px;
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .our-products {
   display: flex;
@@ -991,7 +1023,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  max-width: 45%;
+  width: 45%;
 }
 .product-shop {
   outline-offset: 20px;
@@ -1000,6 +1032,7 @@ body {
 .product-card:nth-child(1n+3) {
   margin-top: 50px;
 }
+
 
 /*-------FOOTER-----*/
 
@@ -1022,6 +1055,8 @@ body {
 }}
 
 
+
+
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
 
 body {
@@ -1032,12 +1067,12 @@ body {
 
 .header {
   padding-top: 45px;
-  width: 100vw;
+  width: 100%;
   background-image: url(images/banner-bg-tablet.jpg);
 }
 .logo-and-menu {
-  width: 92vw;
-  min-width: 700px;
+  width: 100%;
+  max-width: 700px;
   padding: 0;
 }
 .menu-list {
@@ -1087,6 +1122,7 @@ body {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
@@ -1106,15 +1142,15 @@ body {
 /*------MAIN------*/
 
 .container {
-  width: 91vw;
-  min-width: 700px;
-  padding-left: 0;
-  padding-right: 0;
+  max-width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .pages-news {
-  width: 57%;
+  width: 65%;
+  margin-right: 40px;
 }
 .page-list {
   display: flex;
@@ -1150,15 +1186,15 @@ body {
 .aside-left {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: calc(35% - 40px);
   justify-content: flex-start;
 }
-
+ .search-field {
+  min-width: 100%;}
 /*-------Section 2-----*/
 
 .products {
-  width: 91vw;
-  min-width: 700px;
+  width: 100%;
 }
 .our-products {
   display: flex;
@@ -1168,7 +1204,7 @@ body {
   justify-content: space-between;
 }
 .product-card {
-  max-width: 45%;
+  width: 45%;
 }
 .product-shop {
   outline-offset: 20px;
@@ -1181,8 +1217,8 @@ body {
 /*-------FOOTER-----*/
 
 .footer {
-  width: 91vw;
-  min-width: 700px;
+  width: 100%;
+  max-width: 700px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -1355,6 +1391,12 @@ body {
   width: 100%;
   margin-left: 0px;
   }
+
+.news-text-meta {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
 .about {
   display: contents;
   max-width: 100%;
